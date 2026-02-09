@@ -19,3 +19,25 @@
 .site-main {
   padding: var(--space-l) 0;
 }
+.nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: var(--space-m);
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}

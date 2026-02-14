@@ -5,9 +5,10 @@
 }
 
 .site-header {
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+  background: #0f172a;
+  border-bottom: 1px solid #1f2937;
 }
+
 
 .nav .container {
   display: flex;

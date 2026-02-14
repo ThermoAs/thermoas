@@ -66,3 +66,15 @@
   height: 40px;
   display: block;
 }
+.nav-list a {
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+.nav-list a:hover {
+  color: #ffffff;
+}
+
+.logo {
+  color: white;
+}

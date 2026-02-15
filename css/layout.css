@@ -206,3 +206,33 @@ body {
     font-size: 36px;
   }
 }
+/* === PŁYNNE PRZEJŚCIA MIĘDZY SEKCJAMI === */
+
+.section-dark {
+  background: linear-gradient(
+    to bottom,
+    #0b1c33 0%,
+    #0e223d 70%,
+    #f4f6f9 100%
+  );
+}
+
+.section-light {
+  background: #f4f6f9;
+  position: relative;
+}
+
+.section-light::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 28, 51, 0),
+    #f4f6f9
+  );
+}
+

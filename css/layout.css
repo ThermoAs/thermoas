@@ -1,116 +1,98 @@
-.container {
-  max-width: var(--container-width);
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.section {
-  padding: 100px 0;
-}
-
-
-/* HEADER */
-
-.site-header {
-  border-bottom: 1px solid var(--color-border);
-  background: #ffffff;
+/* PREMIUM NAV */
+.glass {
+  background: rgba(10, 15, 30, 0.75);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 80px;
+  align-items: center;
+  padding: 15px 0;
 }
 
 .logo img {
-  height: 72px;
+  height: 110px;
 }
 
-.nav-list {
-  display: flex;
-  gap: 40px;
-}
-
-.nav-list a {
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--text-main);
-}
-
-/* HERO */
-
-.hero {
-  background: linear-gradient(
-      rgba(15, 23, 42, 0.85),
-      rgba(15, 23, 42, 0.85)
-    ),
-    url('/thermoas/assets/hero.png') center/cover no-repeat;
-
+/* HERO PREMIUM */
+.premium-hero {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
-  padding: 160px 0;
+  padding: 180px 0 140px;
+  margin-top: 100px;
 }
 
-.hero h1 {
-  color: white;
-  max-width: 700px;
+.premium-hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.hero .lead {
-  color: #cbd5e1;
+.premium-hero .lead {
   font-size: 20px;
-  max-width: 600px;
+  opacity: 0.85;
+  margin-bottom: 40px;
 }
 
-
-/* FOOTER */
-
-.site-footer {
-  border-top: 1px solid var(--color-border);
-  padding: 40px 0;
-  font-size: 14px;
-  color: var(--text-muted);
-  text-align: center;
-}
-.site-header {
-  border-bottom: none;
-  background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.nav-list a {
-  position: relative;
-  padding-bottom: 4px;
-}
-
-.nav-list a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  background: var(--color-primary);
+.btn-primary {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
   transition: 0.3s;
 }
 
-.nav-list a:hover::after {
-  width: 100%;
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
+
+/* SECTIONS */
+.section {
+  padding: 100px 0;
+}
+
+.dark-section {
+  background: #0f172a;
+  color: white;
+}
+
+.light-section {
+  background: #f8fafc;
+}
+
+/* GRID */
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
-.card {
+.premium-card {
   background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+  transition: 0.3s;
 }
 
+.premium-card:hover {
+  transform: translateY(-6px);
+}
+
+/* FOOTER */
+.premium-footer {
+  background: #0f172a;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}

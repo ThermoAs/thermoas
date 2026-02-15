@@ -5,8 +5,9 @@
 }
 
 .section {
-  padding: 80px 0;
+  padding: 100px 0;
 }
+
 
 /* HEADER */
 
@@ -40,14 +41,27 @@
 /* HERO */
 
 .hero {
-  background: var(--color-light);
-  padding: 120px 0;
+  background: linear-gradient(
+      rgba(15, 23, 42, 0.85),
+      rgba(15, 23, 42, 0.85)
+    ),
+    url('/assets/hero.jpg') center/cover no-repeat;
+
+  color: white;
+  padding: 160px 0;
+}
+
+.hero h1 {
+  color: white;
+  max-width: 700px;
 }
 
 .hero .lead {
-  font-size: 18px;
+  color: #cbd5e1;
+  font-size: 20px;
   max-width: 600px;
 }
+
 
 /* FOOTER */
 
@@ -58,3 +72,32 @@
   color: var(--text-muted);
   text-align: center;
 }
+.site-header {
+  border-bottom: none;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-list a {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--color-primary);
+  transition: 0.3s;
+}
+
+.nav-list a:hover::after {
+  width: 100%;
+}
+

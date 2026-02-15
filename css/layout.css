@@ -20,6 +20,10 @@
   width: 100%;
   z-index: 1000;
 }
+.site-header {
+  backdrop-filter: blur(12px);
+  background: rgba(8, 18, 36, 0.75);
+}
 
 .nav {
   padding: 24px 0;
@@ -128,8 +132,9 @@
 /* ============================= */
 
 .section {
-  padding: 160px 0;
+  padding: 120px 0;
 }
+
 
 .section-dark {
   background: linear-gradient(180deg, #0a1c33, #081426);
@@ -172,9 +177,10 @@
   background: white;
   padding: 40px;
   border-radius: 16px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.15);
   transition: 0.3s ease;
 }
+
 .card {
   background: white;
   padding: 50px;
